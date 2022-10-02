@@ -1,0 +1,24 @@
+[package]
+name = "tendermint-state"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-trait = "0.1"
+bit-vec = "0.6"
+bytes = { version = "1.1", features = ["serde"] }
+creep = "0.2"
+derive_more = "0.99"
+futures = { version = "0.3", features = [ "async-await" ] }
+hummer = "0.2"
+log = "0.4"
+muta-apm = "0.1"
+parking_lot = "0.12"
+prime_tools = "0.3"
+rand_core = "0.6"
+rand_pcg = "0.3"
+rlp = "0.5"
+serde = { version = "1.0", features = ["derive"] }
+tokio = { version = "1.19", features = ["macros", "rt-multi-thread", "time"] }
